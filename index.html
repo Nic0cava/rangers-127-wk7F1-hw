@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="icon" type="image/svg+xml" href="/images/racing-car.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="/css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/main.js" defer ></script>
+<title>F1 API</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/images/racing-car.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            F1 API
+          </a>
+        </div>
+      </nav>
+      <form class="row g-3 form">
+        <div class="col-auto">
+            <input class="form-control" id="season" placeholder="Season">
+          </div>
+        <div class="col-auto">
+          <input class="form-control" id="round" placeholder="Round">
+        </div>
+        <div class="col-auto">
+          <button type="submit" id="search-btn" class="btn btn-primary mb-3">Get Standings</button>
+        </div>
+      </form>
+      <div class="table-div">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Position</th>
+            <th scope="col">Name</th>
+            <th scope="col">Nationality</th>
+            <th scope="col">Sponsor</th>
+            <th scope="col">Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td id="p1name"></td>
+            <td id="p1nationality"></td>
+            <td id="p1sponsor"></td>
+            <td id="p1points"></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td id="p2name"></td>
+            <td id="p2nationality"></td>
+            <td id="p2sponsor"></td>
+            <td id="p2points"></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td id="p3name"></td>
+            <td id="p3nationality"></td>
+            <td id="p3sponsor"></td>
+            <td id="p3points"></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td id="p4name"></td>
+            <td id="p4nationality"></td>
+            <td id="p4sponsor"></td>
+            <td id="p4points"></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td id="p5name"></td>
+            <td id="p5nationality"></td>
+            <td id="p5sponsor"></td>
+            <td id="p5points"></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td id="p6name"></td>
+            <td id="p6nationality"></td>
+            <td id="p6sponsor"></td>
+            <td id="p6points"></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td id="p7name"></td>
+            <td id="p7nationality"></td>
+            <td id="p7sponsor"></td>
+            <td id="p7points"></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
